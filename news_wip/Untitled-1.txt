@@ -1,0 +1,57 @@
+GET TID ->t in query
+
+POST /visitor/genvisitor HTTP/1.1
+Host: passport.weibo.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: de,en-US;q=0.7,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+If-Modified-Since: 0
+Origin: https://passport.weibo.com
+Content-Length: 144
+Content-Type: application/x-www-form-urlencoded
+Connection: keep-alive
+
+cb=gen_callback&fp=%7B%22os%22%3A%221%22%2C%22browser%22%3A%22Gecko84%2C0%2C0%2C0%22%2C%22fonts%22%3A%22undefined%22%2C%22plugins%22%3A%22%22%7D
+
+
+FORM:
+cb	gen_callback
+fp	{"os":"1","browser":"Gecko84,0,0,0","fonts":"undefined","plugins":""}
+
+
+GET SUB cookie
+
+GET /visitor/visitor?a=incarnate&t=K6S%2FGEuy1l%2BdJRmRCeykV6tNkrnDNeWgKb6plShj9t0%3D&cb=cross_domain&from=weibo HTTP/1.1
+Host: passport.weibo.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: de,en-US;q=0.7,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+Cookie: 
+Connection: keep-alive
+
+
+FINAL
+
+:method: GET
+:path: /u/7071395667?is_all=1
+:authority: weibo.com
+:scheme: https
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+accept-language: de,en-US;q=0.7,en;q=0.3
+accept-encoding: gzip, deflate, br
+cookie: login_sid_t=501771357be2bc507482a90d45e6adf6
+cookie: cross_origin_proto=SSL
+cookie: SUB=_2AkMouVe6f8PxqwJRmPAVxGvmZYp2zA3EieKe5aZhJRMxHRl-yT92qlYjtRB6Azl5Vaf-KhGaZ7nXCDUVCq3Z0u3znH5Y
+cookie: SUBP=0033WrSXqPxfM72-Ws9jqgMF55529P9D9Wh3poFTxbzIZvBTqwaC3JK7
+cookie: WBStorage=8daec78e6a891122|undefined
+cookie: _s_tentry=passport.weibo.com
+cookie: wb_view_log=1536*8641.25
+cookie: Apache=540226561160.05316.1608898707391
+cookie: SINAGLOBAL=540226561160.05316.1608898707391
+cookie: ULV=1608898707393:1:1:1:540226561160.05316.1608898707391:
+upgrade-insecure-requests: 1
+te: trailers
+

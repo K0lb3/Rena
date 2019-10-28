@@ -1,0 +1,6 @@
+dnspython
+pymongo
+bs4
+discord.py
+emoji
+pygoogletranslation
